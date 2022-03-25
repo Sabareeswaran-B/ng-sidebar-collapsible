@@ -9,6 +9,9 @@
     "test": "ng test"
   },
   "private": false,
+  "repository": {
+    "url": "https://github.com/Sabareeswaran-B/ng-sidebar-collapsible.git"
+  },
   "dependencies": {
     "@angular/animations": "~13.2.0",
     "@angular/common": "~13.2.0",
