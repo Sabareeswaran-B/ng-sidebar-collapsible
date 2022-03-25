@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "ng-sidenav": {
+      "projectType": "library",
+      "root": "projects/ng-sidenav",
+      "sourceRoot": "projects/ng-sidenav/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ng-sidenav/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-sidenav/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ng-sidenav/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-sidenav/src/test.ts",
+            "tsConfig": "projects/ng-sidenav/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-sidenav/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ng-sidenav"
 }
