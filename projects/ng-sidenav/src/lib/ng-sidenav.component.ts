@@ -49,9 +49,9 @@ export class NgSidenavComponent implements OnInit {
     this.collapsed = false;
     this.showMenu = '';
     this.pushRightClass = 'push-right';
-    let role = Number.parseInt(localStorage.getItem('role')!);
+    let role = localStorage.getItem('role')!;
     console.log(role)
-    if (role == 0)
+    if (role == "admin")
       this.items = this.adminMenuItems;
     else
       this.items = this.employeeMenuItems;
