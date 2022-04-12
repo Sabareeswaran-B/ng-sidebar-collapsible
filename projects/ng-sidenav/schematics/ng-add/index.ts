@@ -1,4 +1,4 @@
-import { chain, noop, Rule, SchematicContext, Tree } from '@angular-devkit/schematics';
+import { chain, noop, Rule, Tree } from '@angular-devkit/schematics';
 // import { NodePackageInstallTask } from '@angular-devkit/schematics/tasks';
 import {
   addModuleImportToRootModule,

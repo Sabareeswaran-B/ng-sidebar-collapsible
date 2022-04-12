@@ -16,6 +16,7 @@ export class NgSidenavComponent implements OnInit {
   items!: MenuItem[];
 
 
+  @Input() color!: string;
   @Input() adminMenuItems!: MenuItem[] 
   // = [
   //   { label: 'Dashboard', icon: 'pi pi-th-large', routerLink: '/admin/dashboard' },

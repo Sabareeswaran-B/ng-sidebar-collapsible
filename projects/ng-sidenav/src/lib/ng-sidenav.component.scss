@@ -1,4 +1,4 @@
-$topnav-background-color: #ff6358;
+$topnav-background-color: #6280ff;
 .sidebar {
     position: fixed;
     z-index: 1000;
@@ -19,7 +19,7 @@ $topnav-background-color: #ff6358;
     transition: all 0.2s ease-in-out;
     .list-group {
         a.list-group-item {
-            background: $topnav-background-color;
+            background: lighten($topnav-background-color, 25%);
             border: 0;
             border-radius: 0;
             color: #fff;
