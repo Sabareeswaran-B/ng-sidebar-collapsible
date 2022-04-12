@@ -31,12 +31,12 @@ $topnav-background-color: #6280ff;
         }
 
         a:hover {
-            background: darken($topnav-background-color, 10%);
+            background: lighten($topnav-background-color, 10%);
             color: #fff;
         }
 
         a.router-link {
-            background: darken($topnav-background-color, 25%);
+            background: $topnav-background-color
         }
     }
     
