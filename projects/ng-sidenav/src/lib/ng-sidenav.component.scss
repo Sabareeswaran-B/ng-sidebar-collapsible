@@ -19,7 +19,7 @@ $topnav-background-color: #6280ff;
     transition: all 0.2s ease-in-out;
     .list-group {
         a.list-group-item {
-            background: lighten($topnav-background-color, 25%);
+            background: $topnav-background-color;
             border: 0;
             border-radius: 0;
             color: #fff;
@@ -31,12 +31,12 @@ $topnav-background-color: #6280ff;
         }
 
         a:hover {
-            background: lighten($topnav-background-color, 10%);
+            background: darken($topnav-background-color, 10%);
             color: #fff;
         }
 
         a.router-link {
-            background: $topnav-background-color
+            background: darken($topnav-background-color, 25%);
         }
     }
     
